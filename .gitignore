@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class proje2 {
+    public static void main(String[] args) {
+        /* Koşullar :
+Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
+Sıcaklık 5 ve 15 arasında ise "Sinema" etkinliğini öner.
+Sıcaklık 15 ve 25 arasında ise "Piknik" etkinliğini öner.
+Sıcaklık 25'ten büyük ise "Yüzme" etkinliğini öner.
+Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.*/
+        int hsck,secim;
+        Scanner ınput= new Scanner(System.in);
+        System.out.print("HAVA SICAKLIĞI:");
+        hsck=ınput.nextInt();
+        System.out.println();
+        System.out.println("1.secim sıcaklık 5 den küçükse");
+        System.out.println("2.secim sıcaklık 5 ise " );
+        System.out.println("3.secim sıcaklık 5-15 arası");
+        System.out.println("4.secim sıcaklık 15 ise ");
+        System.out.println("5.secim sıcaklık 15-25 arası");
+        System.out.println("6.secim sıcaklık 25 ise");
+        System.out.println("7.secim sıcaklık 25 den büyükse");
+
+        System.out.print("SECİM YAPINIZ:");
+        secim=ınput.nextInt();
+       switch(secim){
+           case 1:
+               System.out.println("KAYAK");
+               break;
+           case 2:
+               System.out.println("KAYAK VEYA SİNAMA");
+               break;
+           case 3:
+               System.out.println("SİNAMA");
+               break;
+           case 4:
+               System.out.println("SİNAMA VEYA PİKNİK");
+               break;
+           case 5:
+               System.out.println("PİKNİK");
+               break;
+           case 6:
+               System.out.println("PİKNİK VEYE HAVUZ");
+               break;
+           default:
+               System.out.println("HAVUZ");
+               break;
+
+       }
+
+    }
